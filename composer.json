@@ -1,0 +1,20 @@
+{
+    "name": "nurmanhabib/actor-manager",
+    "description": "Manajemen antara actor dan user",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Habib Nurrahman",
+            "email": "nurmanhabib@yahoo.co.id"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/database": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nurmanhabib\\ActorManager\\": "src/"
+        }
+    }
+}
