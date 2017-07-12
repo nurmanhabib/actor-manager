@@ -27,11 +27,12 @@ class ActorManagerServiceProvider extends ServiceProvider
 
     protected function bootMigrations()
     {
-        $this->publishes([
-            __DIR__.'/../config/actor-manager.php' => config_path('actor-manager.php'),
-        ]);
+        $filename = 'create_actor_manager_tables.php';
+        $dateFormatted = date('Y_m_d_His_');
+        $from = __DIR__.'/../database/migrations/000_00_00_000000_' . $filename;
+        $to = base_path('database/migrations/' . $dateFormatted . $filename);
 
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->publishes([$from => $to], 'migrations');
     }
 
     public function register()

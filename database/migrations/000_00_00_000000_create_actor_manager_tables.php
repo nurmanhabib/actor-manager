@@ -101,8 +101,7 @@ class CreateActorManagerTables extends Migration
     public function down()
     {
         Schema::drop('profiles');
-        Schema::drop('role_permission');
-        Schema::drop('user_permission');
+        Schema::drop('permissions');
         Schema::drop('abilities');
         Schema::drop('user_role');
         Schema::drop('roles');
