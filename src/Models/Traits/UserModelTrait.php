@@ -2,9 +2,9 @@
 
 namespace Nurmanhabib\ActorManager\Models\Traits;
 
+use Nurmanhabib\ActorManager\ActorManager;
 use Nurmanhabib\ActorManager\Contracts\ActorModel;
 use Nurmanhabib\ActorManager\Contracts\RoleModel;
-use Nurmanhabib\ActorManager\Models\Traits\HasAbilityTrait;
 
 trait UserModelTrait
 {
